@@ -18,7 +18,7 @@ jobs:
     #
     # do not run on forks
     #
-    if: github.repository_owner == 'm1k1o'
+    # if: github.repository_owner == 'm1k1o'
     steps:
       -
         name: Checkout
@@ -63,7 +63,7 @@ jobs:
     #
     # do not run on forks
     #
-    if: github.repository_owner == 'm1k1o'
+    # if: github.repository_owner == 'm1k1o'
     needs: [ build-base ]
     strategy:
       # Will build all images even if some fail.
